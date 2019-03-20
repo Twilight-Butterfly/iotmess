@@ -28,7 +28,7 @@ namespace BLINKIOT
         private GpioPinValue pinValue;
         private DispatcherTimer timer;
         private SolidColorBrush redBrush = new SolidColorBrush(Windows.UI.Colors.Red);
-        private SolidColorBrush greyBrush = new SolidColorBrush(Windows.UI.Colors.LightGray);
+        private SolidColorBrush greenBrush = new SolidColorBrush(Windows.UI.Colors.Green);
 
         public MainPage()
         {
@@ -77,7 +77,7 @@ namespace BLINKIOT
             {
                 pinValue = GpioPinValue.High;
                 pin.Write(pinValue);
-                LED.Fill = greyBrush;
+                LED.Fill = greenBrush;
                 GpioStatus.Text = "On";
             }
         }
